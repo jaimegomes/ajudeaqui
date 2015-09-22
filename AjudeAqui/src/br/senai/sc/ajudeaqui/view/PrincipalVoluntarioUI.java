@@ -138,6 +138,11 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
 
         btnFoto.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
         btnFoto.setText("Upload Imagem");
+        btnFoto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFotoActionPerformed(evt);
+            }
+        });
 
         lblEstadoCivil.setText("Estado Civil:");
 
@@ -548,6 +553,10 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeActionPerformed
+
+    private void btnFotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFotoActionPerformed
+      
+    }//GEN-LAST:event_btnFotoActionPerformed
 
     /**
      * @param args the command line arguments
