@@ -32,30 +32,35 @@ public class LoginUI extends javax.swing.JFrame {
         setTitle(":: Portal do Voluntário Ajude Aqui ::");
         setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         setForeground(new java.awt.Color(0, 0, 0));
+        setMaximumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(800, 600));
         setName("frame"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
         getContentPane().setLayout(null);
 
-        lblLogin.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblLogin.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblLogin.setText("Login:");
         getContentPane().add(lblLogin);
-        lblLogin.setBounds(280, 430, 70, 29);
+        lblLogin.setBounds(260, 430, 110, 29);
 
-        txtLogin.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        txtLogin.setFont(new java.awt.Font("Dialog", 2, 24)); // NOI18N
         txtLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(txtLogin);
-        txtLogin.setBounds(360, 430, 130, 30);
+        txtLogin.setBounds(360, 430, 150, 30);
 
-        lblSenha.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblSenha.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblSenha.setText("Senha:");
         getContentPane().add(lblSenha);
-        lblSenha.setBounds(280, 480, 70, 29);
+        lblSenha.setBounds(260, 480, 110, 29);
 
+        pwdSenha.setFont(new java.awt.Font("Dialog", 2, 24)); // NOI18N
         pwdSenha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(pwdSenha);
-        pwdSenha.setBounds(360, 480, 130, 30);
+        pwdSenha.setBounds(360, 480, 150, 30);
 
-        btnEntrar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnEntrar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ok_16x16.png"))); // NOI18N
         btnEntrar.setText("Entrar");
         btnEntrar.setBorder(new javax.swing.border.MatteBorder(null));
         btnEntrar.addActionListener(new java.awt.event.ActionListener() {
@@ -64,12 +69,12 @@ public class LoginUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnEntrar);
-        btnEntrar.setBounds(510, 483, 90, 30);
+        btnEntrar.setBounds(520, 480, 120, 30);
 
-        lblBemVindo.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        lblBemVindo.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblBemVindo.setText("Seja Bem Vindo ao Portal do Voluntário :: Ajude Aqui :: ");
         getContentPane().add(lblBemVindo);
-        lblBemVindo.setBounds(140, 360, 560, 50);
+        lblBemVindo.setBounds(40, 360, 750, 50);
 
         lblErroLogin.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         lblErroLogin.setForeground(new java.awt.Color(255, 0, 0));
