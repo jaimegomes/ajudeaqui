@@ -88,7 +88,25 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
         txtInstituicaoFormacao = new javax.swing.JTextField();
         lblAddHorarioDisponivel = new javax.swing.JLabel();
         panelVagas = new javax.swing.JPanel();
+        panelFiltroVagas = new javax.swing.JPanel();
+        lblTituloFiltroVagas = new javax.swing.JLabel();
+        lblInstituicaoFiltroVagas = new javax.swing.JLabel();
+        lblDataPublicacaoFiltroVagas = new javax.swing.JLabel();
+        txtTituloFiltroVagas = new javax.swing.JTextField();
+        cmbInstituicaoFiltroVagas = new javax.swing.JComboBox();
+        ftxtDataPublicacaoFiltroVagas = new javax.swing.JFormattedTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tableVagas = new javax.swing.JTable();
         panelAvisos = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tableAvisos = new javax.swing.JTable();
+        panelFiltroAvisos = new javax.swing.JPanel();
+        lblTituloFiltroAvisos = new javax.swing.JLabel();
+        lblInstituicaoFiltroAvisos = new javax.swing.JLabel();
+        lblDataPublicacaoFiltroAvisos = new javax.swing.JLabel();
+        txtTituloFiltroAvisos = new javax.swing.JTextField();
+        cmbInstituicaoFiltroAvisos = new javax.swing.JComboBox();
+        ftxtDataPublicacaoFiltroAvisos = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle(":: Portal do Voluntário Ajude Aqui ::");
@@ -262,9 +280,9 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
                         .addGroup(panelPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelPerfilLayout.createSequentialGroup()
                                 .addGroup(panelPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnFoto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnFoto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblAvatar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
                                 .addGroup(panelPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(panelPerfilLayout.createSequentialGroup()
                                         .addGroup(panelPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -494,28 +512,212 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
 
         panelVagas.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
+        panelFiltroVagas.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro de Pesquisa"));
+
+        lblTituloFiltroVagas.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblTituloFiltroVagas.setText("Título:");
+
+        lblInstituicaoFiltroVagas.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblInstituicaoFiltroVagas.setText("Instituição:");
+
+        lblDataPublicacaoFiltroVagas.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblDataPublicacaoFiltroVagas.setText("Data Publicação:");
+
+        ftxtDataPublicacaoFiltroVagas.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        javax.swing.GroupLayout panelFiltroVagasLayout = new javax.swing.GroupLayout(panelFiltroVagas);
+        panelFiltroVagas.setLayout(panelFiltroVagasLayout);
+        panelFiltroVagasLayout.setHorizontalGroup(
+            panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFiltroVagasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelFiltroVagasLayout.createSequentialGroup()
+                        .addComponent(lblDataPublicacaoFiltroVagas)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ftxtDataPublicacaoFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelFiltroVagasLayout.createSequentialGroup()
+                        .addGroup(panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTituloFiltroVagas)
+                            .addComponent(lblInstituicaoFiltroVagas))
+                        .addGap(48, 48, 48)
+                        .addGroup(panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cmbInstituicaoFiltroVagas, 0, 258, Short.MAX_VALUE)
+                            .addComponent(txtTituloFiltroVagas))))
+                .addContainerGap(554, Short.MAX_VALUE))
+        );
+        panelFiltroVagasLayout.setVerticalGroup(
+            panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFiltroVagasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTituloFiltroVagas)
+                    .addComponent(txtTituloFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblInstituicaoFiltroVagas)
+                    .addComponent(cmbInstituicaoFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDataPublicacaoFiltroVagas)
+                    .addComponent(ftxtDataPublicacaoFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        tableVagas.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Instituição", "Título", "Descrição"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tableVagas.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        tableVagas.setAutoscrolls(false);
+        jScrollPane1.setViewportView(tableVagas);
+
         javax.swing.GroupLayout panelVagasLayout = new javax.swing.GroupLayout(panelVagas);
         panelVagas.setLayout(panelVagasLayout);
         panelVagasLayout.setHorizontalGroup(
             panelVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 975, Short.MAX_VALUE)
+            .addGroup(panelVagasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panelFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelVagasLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 951, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         panelVagasLayout.setVerticalGroup(
             panelVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 669, Short.MAX_VALUE)
+            .addGroup(panelVagasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panelFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         menuPrincipal.addTab("Vagas", new javax.swing.ImageIcon(getClass().getResource("/img/lupa_16x16.png")), panelVagas); // NOI18N
+
+        panelAvisos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        tableAvisos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Instituição", "Título", "Descrição"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tableAvisos.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        tableAvisos.setAutoscrolls(false);
+        jScrollPane2.setViewportView(tableAvisos);
+
+        panelFiltroAvisos.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro de Pesquisa"));
+
+        lblTituloFiltroAvisos.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblTituloFiltroAvisos.setText("Título:");
+
+        lblInstituicaoFiltroAvisos.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblInstituicaoFiltroAvisos.setText("Instituição:");
+
+        lblDataPublicacaoFiltroAvisos.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblDataPublicacaoFiltroAvisos.setText("Data Publicação:");
+
+        ftxtDataPublicacaoFiltroAvisos.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        javax.swing.GroupLayout panelFiltroAvisosLayout = new javax.swing.GroupLayout(panelFiltroAvisos);
+        panelFiltroAvisos.setLayout(panelFiltroAvisosLayout);
+        panelFiltroAvisosLayout.setHorizontalGroup(
+            panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFiltroAvisosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelFiltroAvisosLayout.createSequentialGroup()
+                        .addComponent(lblDataPublicacaoFiltroAvisos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ftxtDataPublicacaoFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelFiltroAvisosLayout.createSequentialGroup()
+                        .addGroup(panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTituloFiltroAvisos)
+                            .addComponent(lblInstituicaoFiltroAvisos))
+                        .addGap(48, 48, 48)
+                        .addGroup(panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cmbInstituicaoFiltroAvisos, 0, 258, Short.MAX_VALUE)
+                            .addComponent(txtTituloFiltroAvisos))))
+                .addContainerGap(554, Short.MAX_VALUE))
+        );
+        panelFiltroAvisosLayout.setVerticalGroup(
+            panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFiltroAvisosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTituloFiltroAvisos)
+                    .addComponent(txtTituloFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblInstituicaoFiltroAvisos)
+                    .addComponent(cmbInstituicaoFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panelFiltroAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDataPublicacaoFiltroAvisos)
+                    .addComponent(ftxtDataPublicacaoFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout panelAvisosLayout = new javax.swing.GroupLayout(panelAvisos);
         panelAvisos.setLayout(panelAvisosLayout);
         panelAvisosLayout.setHorizontalGroup(
             panelAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 977, Short.MAX_VALUE)
+            .addGroup(panelAvisosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panelFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAvisosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 951, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         panelAvisosLayout.setVerticalGroup(
             panelAvisosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 671, Short.MAX_VALUE)
+            .addGroup(panelAvisosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panelFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         menuPrincipal.addTab("Avisos", new javax.swing.ImageIcon(getClass().getResource("/img/aviso_16x16.png")), panelAvisos); // NOI18N
@@ -524,9 +726,7 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(menuPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 984, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 42, Short.MAX_VALUE))
+            .addComponent(menuPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 984, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -599,16 +799,22 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private javax.swing.JButton btnFoto;
     private javax.swing.JComboBox cmbAtuouComoVoluntario;
     private javax.swing.JComboBox cmbEstadoCivil;
+    private javax.swing.JComboBox cmbInstituicaoFiltroAvisos;
+    private javax.swing.JComboBox cmbInstituicaoFiltroVagas;
     private javax.swing.JComboBox cmbNivelCurso;
     private javax.swing.JComboBox cmbSituacao;
     private javax.swing.JFormattedTextField ftxtCelular;
     private javax.swing.JFormattedTextField ftxtDataNascimento;
+    private javax.swing.JFormattedTextField ftxtDataPublicacaoFiltroAvisos;
+    private javax.swing.JFormattedTextField ftxtDataPublicacaoFiltroVagas;
     private javax.swing.JFormattedTextField ftxtEmail;
     private javax.swing.JFormattedTextField ftxtFimCurso;
     private javax.swing.JFormattedTextField ftxtFimHorarioDisponivel;
     private javax.swing.JFormattedTextField ftxtInicioCurso;
     private javax.swing.JFormattedTextField ftxtInicioHorarioDisponivel;
     private javax.swing.JFormattedTextField ftxtTelefone;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JFormattedTextField jftxtCpf;
     private javax.swing.JLabel lblAddAreaInteresse;
     private javax.swing.JLabel lblAddCurso;
@@ -623,6 +829,8 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblCpf;
     private javax.swing.JLabel lblDadosPessoais;
     private javax.swing.JLabel lblDataNascimento;
+    private javax.swing.JLabel lblDataPublicacaoFiltroAvisos;
+    private javax.swing.JLabel lblDataPublicacaoFiltroVagas;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblEndereco;
     private javax.swing.JLabel lblEstadoCivil;
@@ -634,6 +842,8 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblInfoComplementares;
     private javax.swing.JLabel lblInicioCurso;
     private javax.swing.JLabel lblInstituicaoExp;
+    private javax.swing.JLabel lblInstituicaoFiltroAvisos;
+    private javax.swing.JLabel lblInstituicaoFiltroVagas;
     private javax.swing.JLabel lblInstituicaoFormacao;
     private javax.swing.JLabel lblNivelCurso;
     private javax.swing.JLabel lblNome;
@@ -641,13 +851,19 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblQtdTempo;
     private javax.swing.JLabel lblSituacao;
     private javax.swing.JLabel lblTelefone;
+    private javax.swing.JLabel lblTituloFiltroAvisos;
+    private javax.swing.JLabel lblTituloFiltroVagas;
     private javax.swing.JTabbedPane menuPrincipal;
     private javax.swing.JPanel panelAvisos;
+    private javax.swing.JPanel panelFiltroAvisos;
+    private javax.swing.JPanel panelFiltroVagas;
     private javax.swing.JPanel panelPerfil;
     private javax.swing.JPanel panelVagas;
     private javax.swing.JScrollPane scrollPaneInfoComplementares;
     private javax.swing.JSeparator separator1;
     private javax.swing.JSeparator separator2;
+    private javax.swing.JTable tableAvisos;
+    private javax.swing.JTable tableVagas;
     private javax.swing.JTextField txtAreaInteresse;
     private javax.swing.JTextField txtComplemento;
     private javax.swing.JTextField txtEndereco;
@@ -657,5 +873,7 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtNomeCurso;
     private javax.swing.JTextField txtQtdTempo;
+    private javax.swing.JTextField txtTituloFiltroAvisos;
+    private javax.swing.JTextField txtTituloFiltroVagas;
     // End of variables declaration//GEN-END:variables
 }
