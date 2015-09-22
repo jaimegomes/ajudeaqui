@@ -34,12 +34,15 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="menuPrincipal" alignment="0" min="-2" pref="908" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="menuPrincipal" min="-2" pref="984" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="menuPrincipal" alignment="0" max="-2" attributes="0"/>
+          <Component id="menuPrincipal" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -65,6 +68,12 @@
                 <LineBorder roundedCorners="true"/>
               </Border>
             </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1000, 650]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[994, 645]"/>
+            </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
@@ -89,8 +98,8 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="btnFoto" max="32767" attributes="0"/>
                                           <Component id="lblAvatar" max="32767" attributes="0"/>
+                                          <Component id="btnFoto" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -105,10 +114,8 @@
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                   <Component id="jftxtCpf" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
-                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                                      <Component id="cmbEstadoCivil" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="ftxtDataNascimento" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                                                  </Group>
+                                                  <Component id="cmbEstadoCivil" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="ftxtDataNascimento" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
                                                   <Component id="txtNome" pref="327" max="32767" attributes="0"/>
                                                   <Component id="txtEndereco" alignment="0" max="32767" attributes="0"/>
                                               </Group>
@@ -146,17 +153,17 @@
                                               <Component id="cmbNivelCurso" min="-2" pref="170" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                               <Component id="lblNomeCurso" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="txtNomeCurso" min="-2" pref="194" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                               <Component id="lblSituacao" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="cmbSituacao" min="-2" pref="86" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="cmbSituacao" min="-2" pref="110" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                               <Component id="lblInicioCurso" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="ftxtInicioCurso" min="-2" pref="43" max="-2" attributes="0"/>
@@ -165,7 +172,10 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="ftxtFimCurso" min="-2" pref="43" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="lblAddCurso" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                              <Component id="lblAddCurso" min="-2" pref="30" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
                                   <Component id="lblExperiencias" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -174,58 +184,61 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblAtuouComoVoluntario" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblHorarioDisponivel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="ftxtInicioHorarioDisponivel" min="-2" pref="67" max="-2" attributes="0"/>
-                                  <Component id="cmbAtuouComoVoluntario" min="-2" pref="76" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblAte" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="ftxtFimHorarioDisponivel" min="-2" pref="67" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="lblAddHorarioDisponivel" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="lblInstituicaoExp" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtInstituicao" min="-2" pref="175" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblFuncao" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Component id="txtFuncao" min="-2" pref="103" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblQtdTempo" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtQtdTempo" min="-2" pref="61" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblAddFuncao" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblInfoComplementares" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="scrollPaneInfoComplementares" min="-2" pref="338" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblAtuouComoVoluntario" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblHorarioDisponivel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="cmbAtuouComoVoluntario" max="32767" attributes="0"/>
+                                          <Component id="ftxtInicioHorarioDisponivel" min="-2" pref="76" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lblInstituicaoExp" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtInstituicao" min="-2" pref="175" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblFuncao" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <Component id="txtFuncao" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblQtdTempo" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtQtdTempo" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                              <Component id="lblAddFuncao" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblAte" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="ftxtFimHorarioDisponivel" min="-2" pref="67" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                              <Component id="lblAddHorarioDisponivel" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblAreaInteresse" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtAreaInteresse" min="-2" pref="171" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblAddAreaInteresse" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblInfoComplementares" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="scrollPaneInfoComplementares" min="-2" pref="338" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblAreaInteresse" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtAreaInteresse" min="-2" pref="171" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                              <Component id="lblAddAreaInteresse" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="363" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -299,7 +312,7 @@
                       <Component id="separator1" min="-2" pref="10" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                       <Component id="lblFormacao" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblNivelCurso" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cmbNivelCurso" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -321,52 +334,59 @@
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="separator2" min="-2" pref="7" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="lblExperiencias" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblAtuouComoVoluntario" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cmbAtuouComoVoluntario" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtInstituicao" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblInstituicaoExp" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtFuncao" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblFuncao" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblQtdTempo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtQtdTempo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblAddFuncao" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblAddCurso" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblHorarioDisponivel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ftxtInicioHorarioDisponivel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblAte" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ftxtFimHorarioDisponivel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="lblAddFuncao" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="lblAtuouComoVoluntario" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cmbAtuouComoVoluntario" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtInstituicao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblInstituicaoExp" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtFuncao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFuncao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblQtdTempo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtQtdTempo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="lblHorarioDisponivel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="scrollPaneInfoComplementares" min="-2" pref="77" max="-2" attributes="0"/>
-                                  <Component id="lblInfoComplementares" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblAddHorarioDisponivel" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lblAreaInteresse" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtAreaInteresse" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ftxtInicioHorarioDisponivel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAte" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ftxtFimHorarioDisponivel" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="lblAddAreaInteresse" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="lblAddHorarioDisponivel" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblInfoComplementares" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtAreaInteresse" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAddAreaInteresse" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAreaInteresse" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="scrollPaneInfoComplementares" min="-2" pref="77" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -428,6 +448,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnFoto">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="10" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Upload Imagem"/>
               </Properties>
             </Component>
@@ -512,13 +535,14 @@
             <Component class="javax.swing.JComboBox" name="cmbNivelCurso">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="6">
+                  <StringArray count="7">
                     <StringItem index="0" value="..."/>
-                    <StringItem index="1" value="Ensino fundamental "/>
-                    <StringItem index="2" value="Ensino m&#xe9;dio "/>
-                    <StringItem index="3" value="Ensino superior"/>
-                    <StringItem index="4" value="P&#xf3;s-gradua&#xe7;&#xe3;o "/>
-                    <StringItem index="5" value="Doutorado"/>
+                    <StringItem index="1" value="Curso extracurricular"/>
+                    <StringItem index="2" value="Ensino fundamental "/>
+                    <StringItem index="3" value="Ensino m&#xe9;dio "/>
+                    <StringItem index="4" value="Ensino superior"/>
+                    <StringItem index="5" value="P&#xf3;s-gradua&#xe7;&#xe3;o "/>
+                    <StringItem index="6" value="Doutorado"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -775,12 +799,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="899" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="975" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="636" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="669" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -800,12 +824,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="901" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="977" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="638" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="671" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

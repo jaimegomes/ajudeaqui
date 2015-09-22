@@ -5,12 +5,12 @@ package br.senai.sc.ajudeaqui.view;
  *
  * @author Jaime Gomes
  */
-public class LoginView extends javax.swing.JFrame {
+public class LoginUI extends javax.swing.JFrame {
 
     /**
      * Creates new form LoginView
      */
-    public LoginView() {
+    public LoginUI() {
         initComponents();
     }
 
@@ -32,16 +32,14 @@ public class LoginView extends javax.swing.JFrame {
         setTitle(":: Portal do Voluntário Ajude Aqui ::");
         setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         setForeground(new java.awt.Color(0, 0, 0));
-        setMaximumSize(new java.awt.Dimension(800, 600));
         setName("frame"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
         getContentPane().setLayout(null);
 
         lblLogin.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         lblLogin.setText("Login:");
         getContentPane().add(lblLogin);
-        lblLogin.setBounds(280, 430, 70, 28);
+        lblLogin.setBounds(280, 430, 70, 29);
 
         txtLogin.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         txtLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -51,14 +49,13 @@ public class LoginView extends javax.swing.JFrame {
         lblSenha.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         lblSenha.setText("Senha:");
         getContentPane().add(lblSenha);
-        lblSenha.setBounds(280, 480, 70, 28);
+        lblSenha.setBounds(280, 480, 70, 29);
 
         pwdSenha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(pwdSenha);
         pwdSenha.setBounds(360, 480, 130, 30);
 
         btnEntrar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnEntrar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrador\\git\\es-4dof\\es-4dof\\images\\ok_16x16.png")); // NOI18N
         btnEntrar.setText("Entrar");
         btnEntrar.setBorder(new javax.swing.border.MatteBorder(null));
         btnEntrar.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +93,7 @@ public class LoginView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginView().setVisible(true);
+                new LoginUI().setVisible(true);
             }
         });
     }
