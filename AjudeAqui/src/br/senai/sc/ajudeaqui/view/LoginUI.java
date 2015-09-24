@@ -42,7 +42,7 @@ public class LoginUI extends javax.swing.JFrame {
         lblLogin.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblLogin.setText("Login:");
         getContentPane().add(lblLogin);
-        lblLogin.setBounds(260, 430, 110, 32);
+        lblLogin.setBounds(260, 430, 110, 29);
 
         txtLogin.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
         txtLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -52,7 +52,7 @@ public class LoginUI extends javax.swing.JFrame {
         lblSenha.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblSenha.setText("Senha:");
         getContentPane().add(lblSenha);
-        lblSenha.setBounds(260, 480, 110, 32);
+        lblSenha.setBounds(260, 480, 110, 29);
 
         pwdSenha.setFont(new java.awt.Font("Dialog", 2, 14)); // NOI18N
         pwdSenha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
