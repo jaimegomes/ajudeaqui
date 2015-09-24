@@ -42,9 +42,9 @@ public class LoginUI extends javax.swing.JFrame {
         lblLogin.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblLogin.setText("Login:");
         getContentPane().add(lblLogin);
-        lblLogin.setBounds(260, 430, 110, 29);
+        lblLogin.setBounds(260, 430, 110, 32);
 
-        txtLogin.setFont(new java.awt.Font("Dialog", 2, 24)); // NOI18N
+        txtLogin.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
         txtLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(txtLogin);
         txtLogin.setBounds(360, 430, 150, 30);
@@ -52,9 +52,9 @@ public class LoginUI extends javax.swing.JFrame {
         lblSenha.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblSenha.setText("Senha:");
         getContentPane().add(lblSenha);
-        lblSenha.setBounds(260, 480, 110, 29);
+        lblSenha.setBounds(260, 480, 110, 32);
 
-        pwdSenha.setFont(new java.awt.Font("Dialog", 2, 24)); // NOI18N
+        pwdSenha.setFont(new java.awt.Font("Dialog", 2, 14)); // NOI18N
         pwdSenha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(pwdSenha);
         pwdSenha.setBounds(360, 480, 150, 30);
@@ -74,7 +74,7 @@ public class LoginUI extends javax.swing.JFrame {
         lblBemVindo.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblBemVindo.setText("Seja Bem Vindo ao Portal do Voluntário :: Ajude Aqui :: ");
         getContentPane().add(lblBemVindo);
-        lblBemVindo.setBounds(40, 360, 750, 50);
+        lblBemVindo.setBounds(110, 360, 660, 50);
 
         lblErroLogin.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         lblErroLogin.setForeground(new java.awt.Color(255, 0, 0));
