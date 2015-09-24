@@ -83,8 +83,6 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         txtFiltroTituloAnunciosPublicados = new javax.swing.JTextField();
         panelCadAnuncio = new javax.swing.JPanel();
         lblTituloCadAnuncio = new javax.swing.JLabel();
-        cmbTipoCadAnuncio = new javax.swing.JComboBox();
-        lblTipoCadAnuncio = new javax.swing.JLabel();
         spinnerVagasCadAnuncio = new javax.swing.JSpinner();
         lblVagasCadAnuncio = new javax.swing.JLabel();
         txtTituloCadAnuncio = new javax.swing.JTextField();
@@ -124,14 +122,17 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
 
         lblEmail.setText("Email:");
 
+        lblObservacoes.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lblObservacoes.setText("Observações:");
 
+        lblResponsavel.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lblResponsavel.setText("Responsável:");
 
         atxtObservacoes.setColumns(20);
         atxtObservacoes.setRows(5);
         scrollpaneObservacoes.setViewportView(atxtObservacoes);
 
+        lblSite.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lblSite.setText("Site:");
 
         lblNome.setText("Nome:");
@@ -145,45 +146,47 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
             panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
-                            .addComponent(btnEditarDadosInstituicao1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(btnSalvarDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
-                            .addComponent(lblObservacoes)
-                            .addGap(18, 18, 18)
-                            .addComponent(scrollpaneObservacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(lblCnpj)
-                    .addComponent(lblEmail)
+                .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
                         .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDadosInstituicaoLayout.createSequentialGroup()
-                                    .addComponent(lblRazaoSocial)
-                                    .addGap(18, 18, 18))
-                                .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
-                                    .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblNome)
-                                        .addComponent(lblEndereco))
-                                    .addGap(35, 35, 35)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDadosInstituicaoLayout.createSequentialGroup()
+                                .addComponent(btnEditarDadosInstituicao1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnSalvarDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblCnpj)
+                            .addComponent(lblEmail)
                             .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
                                 .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblSite)
-                                    .addComponent(lblResponsavel)
-                                    .addComponent(lblTelefone))
-                                .addGap(19, 19, 19)))
-                        .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtSite, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtRazaoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDadosInstituicaoLayout.createSequentialGroup()
+                                            .addComponent(lblRazaoSocial)
+                                            .addGap(18, 18, 18))
+                                        .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
+                                            .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(lblNome)
+                                                .addComponent(lblEndereco))
+                                            .addGap(35, 35, 35)))
+                                    .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
+                                        .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblSite)
+                                            .addComponent(lblResponsavel)
+                                            .addComponent(lblTelefone))
+                                        .addGap(19, 19, 19)))
+                                .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtSite, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtRazaoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panelDadosInstituicaoLayout.createSequentialGroup()
+                        .addComponent(lblObservacoes)
+                        .addGap(28, 28, 28)
+                        .addComponent(scrollpaneObservacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(361, 361, 361))))
         );
         panelDadosInstituicaoLayout.setVerticalGroup(
             panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -227,7 +230,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                 .addGroup(panelDadosInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalvarDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEditarDadosInstituicao1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelInstituicaoLayout = new javax.swing.GroupLayout(panelInstituicao);
@@ -236,15 +239,15 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
             panelInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelInstituicaoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(577, Short.MAX_VALUE))
+                .addComponent(panelDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(534, Short.MAX_VALUE))
         );
         panelInstituicaoLayout.setVerticalGroup(
             panelInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelInstituicaoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panelDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(317, Short.MAX_VALUE))
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         menuPrincipalInstituicao.addTab("Instituição", new javax.swing.ImageIcon(getClass().getResource("/img/home_16x16.png.png")), panelInstituicao); // NOI18N
@@ -292,14 +295,13 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                         .addGroup(panelFiltroVoluntariosLayout.createSequentialGroup()
                             .addComponent(txtNomeFiltroVoluntarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(txtEmailFiltroVoluntarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(panelFiltroVoluntariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(txtEmailFiltroVoluntarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblEmailFiltroVoluntarios)))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFiltroVoluntariosLayout.createSequentialGroup()
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnPesquisarFiltroVoluntarios, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(panelFiltroVoluntariosLayout.createSequentialGroup()
-                        .addComponent(lblNomeFiltroVoluntarios)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblEmailFiltroVoluntarios)))
+                    .addComponent(lblNomeFiltroVoluntarios))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -409,18 +411,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         tableAvisosPublicados.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         tableAvisosPublicados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Teste", "Teste"},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+
             },
             new String [] {
                 "Título", "Descrição"
@@ -437,6 +428,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         tableAvisosPublicados.setRowHeight(30);
         scrollpaneAvisosPublicados.setViewportView(tableAvisosPublicados);
 
+        lblFiltroTituloAvisosPublicados.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lblFiltroTituloAvisosPublicados.setText("Título:");
 
         btnPesquisarAvisosPublicados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/lupa_16x16.png"))); // NOI18N
@@ -463,9 +455,8 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                     .addComponent(lblFiltroTituloAvisosPublicados)
                     .addComponent(txtFiltroTituloAvisosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPesquisarAvisosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollpaneAvisosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scrollpaneAvisosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelAvisoLayout = new javax.swing.GroupLayout(panelAviso);
@@ -484,9 +475,9 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
             .addGroup(panelAvisoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panelCadAviso, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelAvisosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelAvisosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         menuPrincipalInstituicao.addTab("Aviso", new javax.swing.ImageIcon(getClass().getResource("/img/journal_16x16.png")), panelAviso); // NOI18N
@@ -500,19 +491,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
 
         tableAnunciosPublicados1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String [] {
                 "Título", "Vagas Disponíveis", "Descrição"
@@ -532,6 +511,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         btnPesquisarAnunciosPublicados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/lupa_16x16.png"))); // NOI18N
         btnPesquisarAnunciosPublicados.setText("Pesquisar");
 
+        lblFiltroTituloAnunciosPublicados.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lblFiltroTituloAnunciosPublicados.setText("Título:");
 
         javax.swing.GroupLayout panelAnunciosPublicadosLayout = new javax.swing.GroupLayout(panelAnunciosPublicados);
@@ -550,24 +530,19 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         panelAnunciosPublicadosLayout.setVerticalGroup(
             panelAnunciosPublicadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAnunciosPublicadosLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(panelAnunciosPublicadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblFiltroTituloAnunciosPublicados)
                     .addComponent(txtFiltroTituloAnunciosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPesquisarAnunciosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scrollpaneAnunciosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(scrollpaneAnunciosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE))
         );
 
         panelCadAnuncio.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro de Anuncios"));
         panelCadAnuncio.setPreferredSize(new java.awt.Dimension(967, 275));
 
         lblTituloCadAnuncio.setText("Título:");
-
-        cmbTipoCadAnuncio.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "...", "Anúnciar Vaga", "Aviso" }));
-
-        lblTipoCadAnuncio.setText("Tipo:");
 
         lblVagasCadAnuncio.setText("Vagas:");
 
@@ -586,13 +561,11 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
             panelCadAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelCadAnuncioLayout.createSequentialGroup()
                 .addGroup(panelCadAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblVagasCadAnuncio)
-                    .addComponent(lblTipoCadAnuncio)
                     .addComponent(lblTituloCadAnuncio)
-                    .addComponent(lblDescricaoCadAnuncio))
+                    .addComponent(lblDescricaoCadAnuncio)
+                    .addComponent(lblVagasCadAnuncio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelCadAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(cmbTipoCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(spinnerVagasCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panelCadAnuncioLayout.createSequentialGroup()
                         .addGap(247, 247, 247)
@@ -608,10 +581,6 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                 .addGroup(panelCadAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTituloCadAnuncio)
                     .addComponent(txtTituloCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(4, 4, 4)
-                .addGroup(panelCadAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTipoCadAnuncio)
-                    .addComponent(cmbTipoCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelCadAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblVagasCadAnuncio)
@@ -622,7 +591,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                     .addComponent(scrollpaneDescricaoCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSalvarCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
+                .addGap(40, 40, 40))
         );
 
         javax.swing.GroupLayout panelAnuncioLayout = new javax.swing.GroupLayout(panelAnuncio);
@@ -640,10 +609,10 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
             panelAnuncioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelAnuncioLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panelAnunciosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38))
+                .addComponent(panelCadAnuncio, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelAnunciosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         menuPrincipalInstituicao.addTab("Anúncio", new javax.swing.ImageIcon(getClass().getResource("/img/aviso_16x16.png")), panelAnuncio); // NOI18N
@@ -658,9 +627,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(menuPrincipalInstituicao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 32, Short.MAX_VALUE))
+            .addComponent(menuPrincipalInstituicao, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
         );
 
         menuPrincipalInstituicao.getAccessibleContext().setAccessibleName("");
@@ -714,7 +681,6 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
     private javax.swing.JButton btnSalvarAnuncioCadAviso;
     private javax.swing.JButton btnSalvarCadAnuncio;
     private javax.swing.JButton btnSalvarDadosInstituicao;
-    private javax.swing.JComboBox cmbTipoCadAnuncio;
     private javax.swing.JLabel lblCnpj;
     private javax.swing.JLabel lblDescricaoCadAnuncio;
     private javax.swing.JLabel lblDescricaoCadAviso;
@@ -730,7 +696,6 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblResponsavel;
     private javax.swing.JLabel lblSite;
     private javax.swing.JLabel lblTelefone;
-    private javax.swing.JLabel lblTipoCadAnuncio;
     private javax.swing.JLabel lblTituloCadAnuncio;
     private javax.swing.JLabel lblTituloCadAviso;
     private javax.swing.JLabel lblVagasCadAnuncio;
