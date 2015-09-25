@@ -1101,8 +1101,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="panelFiltroAvisos" min="-2" pref="110" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="scrollpaneAvisos" min="-2" pref="549" max="-2" attributes="0"/>
-                      <EmptySpace pref="51" max="32767" attributes="0"/>
+                      <Component id="scrollpaneAvisos" min="-2" pref="533" max="-2" attributes="0"/>
+                      <EmptySpace pref="67" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

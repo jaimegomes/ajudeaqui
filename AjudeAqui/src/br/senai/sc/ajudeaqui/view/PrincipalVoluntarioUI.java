@@ -777,8 +777,8 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(panelFiltroAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollpaneAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addComponent(scrollpaneAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         menuPrincipalVoluntario.addTab("Avisos", new javax.swing.ImageIcon(getClass().getResource("/img/aviso_16x16.png")), panelAvisos); // NOI18N

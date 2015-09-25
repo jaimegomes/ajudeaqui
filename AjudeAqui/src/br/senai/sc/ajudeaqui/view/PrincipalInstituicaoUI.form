@@ -110,7 +110,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="panelDadosInstituicao" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="318" max="32767" attributes="0"/>
+                      <EmptySpace pref="315" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -240,7 +240,7 @@
                               <Component id="btnSalvarDadosInstituicao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                               <Component id="btnEditarDadosInstituicao1" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="28" max="32767" attributes="0"/>
+                          <EmptySpace pref="31" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -590,7 +590,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="btnSalvarAnuncioCadAviso" min="-2" pref="116" max="-2" attributes="0"/>
+                              <Component id="btnSalvarAvisoCadAviso" min="-2" pref="116" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="lblDescricaoCadAviso" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -621,7 +621,7 @@
                               <Component id="scrollpaneDescricaoCadAviso" min="-2" pref="127" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnSalvarAnuncioCadAviso" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="btnSalvarAvisoCadAviso" min="-2" pref="19" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -655,7 +655,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JButton" name="btnSalvarAnuncioCadAviso">
+                <Component class="javax.swing.JButton" name="btnSalvarAvisoCadAviso">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/img/salvar_16x16.png"/>
@@ -683,22 +683,27 @@
                           <Component id="txtFiltroTituloAvisosPublicados" min="-2" pref="140" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnPesquisarAvisosPublicados" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="486" max="32767" attributes="0"/>
+                          <Component id="btnEditarAviso" min="-2" pref="116" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnExcluirAviso" min="-2" pref="116" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="scrollpaneAvisosPublicados" alignment="0" pref="1057" max="32767" attributes="0"/>
+                      <Component id="scrollpaneAvisosPublicados" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblFiltroTituloAvisosPublicados" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtFiltroTituloAvisosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                               <Component id="btnPesquisarAvisosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="btnEditarAviso" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="btnExcluirAviso" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="scrollpaneAvisosPublicados" pref="415" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="scrollpaneAvisosPublicados" pref="426" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -717,9 +722,10 @@
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="2" rowCount="0">
+                          <Table columnCount="3" rowCount="0">
                             <Column editable="true" title="T&#xed;tulo" type="java.lang.String"/>
                             <Column editable="true" title="Descri&#xe7;&#xe3;o" type="java.lang.String"/>
+                            <Column editable="true" title="Data Publica&#xe7;&#xe3;o" type="java.lang.String"/>
                           </Table>
                         </Property>
                         <Property name="rowHeight" type="int" value="30"/>
@@ -743,6 +749,22 @@
                       <Image iconType="3" name="/img/lupa_16x16.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Pesquisar"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnEditarAviso">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/editar_usuario_16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Editar"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnExcluirAviso">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/cancelar_16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Excluir"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -821,22 +843,31 @@
                           <Component id="txtFiltroTituloAnunciosPublicados" min="-2" pref="140" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnPesquisarAnunciosPublicados" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="486" max="32767" attributes="0"/>
+                          <Component id="btnEditarAnuncio" min="-2" pref="116" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnExcluirAnuncio" min="-2" pref="116" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="scrollpaneAnunciosPublicados" alignment="0" max="32767" attributes="0"/>
+                      <Component id="scrollpaneAnunciosPublicados" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblFiltroTituloAnunciosPublicados" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtFiltroTituloAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="btnPesquisarAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="btnEditarAnuncio" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="btnExcluirAnuncio" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="lblFiltroTituloAnunciosPublicados" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtFiltroTituloAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="btnPesquisarAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="scrollpaneAnunciosPublicados" pref="402" max="32767" attributes="0"/>
+                          <Component id="scrollpaneAnunciosPublicados" pref="409" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -881,6 +912,22 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtFiltroTituloAnunciosPublicados">
                 </Component>
+                <Component class="javax.swing.JButton" name="btnEditarAnuncio">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/editar_usuario_16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Editar"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnExcluirAnuncio">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/cancelar_16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Excluir"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelCadAnuncio">
@@ -914,7 +961,7 @@
                               <Component id="scrollpaneDescricaoCadAnuncio" max="32767" attributes="0"/>
                               <Component id="txtTituloCadAnuncio" alignment="0" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="602" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
