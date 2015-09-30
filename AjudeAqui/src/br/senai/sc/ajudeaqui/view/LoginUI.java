@@ -26,6 +26,7 @@ public class LoginUI extends javax.swing.JFrame {
         btnEntrar = new javax.swing.JButton();
         lblBemVindo = new javax.swing.JLabel();
         lblErroLogin = new javax.swing.JLabel();
+        btnRegistrarse = new javax.swing.JButton();
         lblBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -81,6 +82,10 @@ public class LoginUI extends javax.swing.JFrame {
         getContentPane().add(lblErroLogin);
         lblErroLogin.setBounds(140, 558, 550, 0);
 
+        btnRegistrarse.setText("Registrar-se");
+        getContentPane().add(btnRegistrarse);
+        btnRegistrarse.setBounds(360, 530, 150, 25);
+
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background.png"))); // NOI18N
         getContentPane().add(lblBackground);
         lblBackground.setBounds(0, 0, 810, 610);
@@ -105,6 +110,7 @@ public class LoginUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEntrar;
+    private javax.swing.JButton btnRegistrarse;
     private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblBemVindo;
     private javax.swing.JLabel lblErroLogin;

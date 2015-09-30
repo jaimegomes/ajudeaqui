@@ -116,7 +116,7 @@
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="panelExperiencias" alignment="0" max="32767" attributes="0"/>
                               <Component id="panelDadosPessoais" alignment="0" pref="1067" max="32767" attributes="0"/>
-                              <Component id="panelFormacaoAcademica" alignment="0" pref="1067" max="32767" attributes="0"/>
+                              <Component id="panelFormacaoAcademica" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -129,7 +129,7 @@
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Component id="panelDadosPessoais" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="panelFormacaoAcademica" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="panelFormacaoAcademica" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="panelExperiencias" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -698,7 +698,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                           <Component id="cmbHorarioDisponivel" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
                                           <Component id="btnCursosInseridos1" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
                                       </Group>
@@ -1170,10 +1170,7 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="cmbInstituicaoFiltroAvisos" min="-2" pref="258" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="ftxtDataPublicacaoFiltroAvisos" min="-2" pref="148" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="ftxtDataPublicacaoFiltroAvisos" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
                                   <Component id="txtTituloFiltroAvisos" min="-2" pref="258" max="-2" attributes="0"/>
                               </Group>
                           </Group>
