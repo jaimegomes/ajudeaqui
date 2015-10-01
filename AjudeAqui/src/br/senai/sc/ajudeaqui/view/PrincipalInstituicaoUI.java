@@ -105,12 +105,12 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         menuPrincipalInstituicao.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         menuPrincipalInstituicao.setMaximumSize(new java.awt.Dimension(1100, 700));
         menuPrincipalInstituicao.setMinimumSize(new java.awt.Dimension(1100, 700));
-        menuPrincipalInstituicao.setPreferredSize(new java.awt.Dimension(1100, 730));
+        menuPrincipalInstituicao.setPreferredSize(new java.awt.Dimension(1100, 700));
 
         panelInstituicao.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        panelInstituicao.setMaximumSize(new java.awt.Dimension(1010, 730));
-        panelInstituicao.setMinimumSize(new java.awt.Dimension(1010, 730));
-        panelInstituicao.setPreferredSize(new java.awt.Dimension(1010, 730));
+        panelInstituicao.setMaximumSize(new java.awt.Dimension(1110, 730));
+        panelInstituicao.setMinimumSize(new java.awt.Dimension(1110, 730));
+        panelInstituicao.setPreferredSize(new java.awt.Dimension(1110, 730));
 
         panelDadosInstituicao.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados da Instituição"));
 
@@ -243,7 +243,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
             .addGroup(panelInstituicaoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panelDadosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(534, Short.MAX_VALUE))
+                .addContainerGap(553, Short.MAX_VALUE))
         );
         panelInstituicaoLayout.setVerticalGroup(
             panelInstituicaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,9 +256,9 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         menuPrincipalInstituicao.addTab("Instituição", new javax.swing.ImageIcon(getClass().getResource("/img/home_16x16.png.png")), panelInstituicao); // NOI18N
 
         panelVoluntarios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        panelVoluntarios.setMaximumSize(new java.awt.Dimension(1010, 730));
-        panelVoluntarios.setMinimumSize(new java.awt.Dimension(1010, 730));
-        panelVoluntarios.setPreferredSize(new java.awt.Dimension(1010, 730));
+        panelVoluntarios.setMaximumSize(new java.awt.Dimension(1110, 730));
+        panelVoluntarios.setMinimumSize(new java.awt.Dimension(1110, 730));
+        panelVoluntarios.setPreferredSize(new java.awt.Dimension(1110, 730));
 
         panelFiltroVoluntarios.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro de Pesquisa"));
         panelFiltroVoluntarios.setPreferredSize(new java.awt.Dimension(967, 160));
@@ -358,9 +358,9 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         menuPrincipalInstituicao.addTab("Voluntários", new javax.swing.ImageIcon(getClass().getResource("/img/usuarios_16x16.png")), panelVoluntarios); // NOI18N
 
         panelAviso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        panelAviso.setMaximumSize(new java.awt.Dimension(1010, 730));
-        panelAviso.setMinimumSize(new java.awt.Dimension(1010, 730));
-        panelAviso.setPreferredSize(new java.awt.Dimension(1010, 730));
+        panelAviso.setMaximumSize(new java.awt.Dimension(1110, 730));
+        panelAviso.setMinimumSize(new java.awt.Dimension(1110, 730));
+        panelAviso.setPreferredSize(new java.awt.Dimension(1110, 730));
 
         panelCadAviso.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro de Avisos"));
         panelCadAviso.setPreferredSize(new java.awt.Dimension(967, 275));
@@ -470,7 +470,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                     .addComponent(btnEditarAviso, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnExcluirAviso, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollpaneAvisosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 426, Short.MAX_VALUE))
+                .addComponent(scrollpaneAvisosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelAvisoLayout = new javax.swing.GroupLayout(panelAviso);
@@ -497,9 +497,10 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         menuPrincipalInstituicao.addTab("Aviso", new javax.swing.ImageIcon(getClass().getResource("/img/journal_16x16.png")), panelAviso); // NOI18N
 
         panelAnuncio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        panelAnuncio.setMaximumSize(new java.awt.Dimension(1010, 730));
-        panelAnuncio.setMinimumSize(new java.awt.Dimension(1010, 730));
-        panelAnuncio.setPreferredSize(new java.awt.Dimension(1010, 730));
+        panelAnuncio.setMaximumSize(new java.awt.Dimension(1110, 730));
+        panelAnuncio.setMinimumSize(new java.awt.Dimension(1110, 730));
+        panelAnuncio.setPreferredSize(new java.awt.Dimension(1110, 730));
+        panelAnuncio.setRequestFocusEnabled(false);
 
         panelAnunciosPublicados.setBorder(javax.swing.BorderFactory.createTitledBorder("Anúncios Publicados"));
 
@@ -563,7 +564,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
                         .addComponent(txtFiltroTituloAnunciosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnPesquisarAnunciosPublicados, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollpaneAnunciosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 409, Short.MAX_VALUE))
+                .addComponent(scrollpaneAnunciosPublicados, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE))
         );
 
         panelCadAnuncio.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro de Anuncios"));
@@ -654,7 +655,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menuPrincipalInstituicao, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
+            .addComponent(menuPrincipalInstituicao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         menuPrincipalInstituicao.getAccessibleContext().setAccessibleName("");

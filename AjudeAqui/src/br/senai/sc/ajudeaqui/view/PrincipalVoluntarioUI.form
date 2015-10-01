@@ -37,7 +37,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="menuPrincipalVoluntario" alignment="0" pref="1108" max="32767" attributes="0"/>
+          <Component id="menuPrincipalVoluntario" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -111,12 +111,10 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="btnSalvarDadosPerfil1" min="-2" pref="116" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="panelFormacaoAcademica" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="panelDadosPessoais" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Component id="panelExperiencias" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="panelFormacaoAcademica" alignment="0" max="32767" attributes="0"/>
+                              <Component id="panelDadosPessoais" alignment="0" max="32767" attributes="0"/>
+                              <Component id="panelExperiencias" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="20" max="32767" attributes="0"/>
@@ -137,7 +135,7 @@
                           <Component id="btnSalvarDadosPerfil1" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                           <Component id="btnSalvarDadosPerfil" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="220" max="32767" attributes="0"/>
+                      <EmptySpace pref="218" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -222,7 +220,7 @@
                               <Component id="cmbSexo" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
                               <Component id="txtComplemento" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="202" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -688,7 +686,15 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="cmbHorarioDisponivel" min="-2" pref="105" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="btnAddHorario" min="-2" pref="22" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="btnCursosInseridos1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="scrollPaneInfoComplementares" min="-2" pref="338" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Component id="cmbAtuouComoVoluntario" min="-2" pref="62" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="lblInstituicaoExp" min="-2" max="-2" attributes="0"/>
@@ -699,33 +705,29 @@
                                           <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                           <Component id="txtFuncao" min="-2" pref="103" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="lblQtdTempo" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                          <Component id="txtQtdTempo" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="lblEntrada" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="datechooseEntrada" min="-2" pref="86" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="lblSaida" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="datechooserSaida" min="-2" pref="86" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="btnAddExperiencia" min="-2" pref="22" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="cmbHorarioDisponivel" min="-2" pref="105" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnAddHorario" min="-2" pref="22" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnCursosInseridos1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="scrollPaneInfoComplementares" min="-2" pref="338" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="226" max="32767" attributes="0"/>
+                          <EmptySpace pref="117" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                       <Component id="txtInstituicao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                                       <Component id="lblInstituicaoExp" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -737,11 +739,16 @@
                                       <Component id="cmbAtuouComoVoluntario" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Component id="btnAddExperiencia" min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="lblQtdTempo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtQtdTempo" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblEntrada" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="datechooseEntrada" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblSaida" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="datechooserSaida" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -762,7 +769,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="lblInfoComplementares" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="scrollPaneInfoComplementares" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
@@ -776,7 +783,7 @@
                                   <Component id="btnAddAreaInteresse" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="12" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -799,8 +806,6 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtQtdTempo">
-                </Component>
                 <Container class="javax.swing.JScrollPane" name="scrollPaneInfoComplementares">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -821,14 +826,6 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Dialog" size="12" style="1"/>
                     </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblQtdTempo">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Dialog" size="12" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Quanto Tempo?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnAddAreaInteresse">
@@ -934,6 +931,26 @@
                     </Property>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JLabel" name="lblEntrada">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Entrada:"/>
+                  </Properties>
+                </Component>
+                <Component class="datechooser.beans.DateChooserCombo" name="datechooseEntrada">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblSaida">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Sa&#xed;da:"/>
+                  </Properties>
+                </Component>
+                <Component class="datechooser.beans.DateChooserCombo" name="datechooserSaida">
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
@@ -973,7 +990,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="scrollpaneVagas" max="32767" attributes="0"/>
-                          <Component id="panelFiltroVagas" pref="1079" max="32767" attributes="0"/>
+                          <Component id="panelFiltroVagas" pref="1071" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1028,7 +1045,7 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnPesquisarFiltroVagas" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="585" max="32767" attributes="0"/>
+                          <EmptySpace pref="577" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1172,7 +1189,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="scrollpaneAvisos" max="32767" attributes="0"/>
-                          <Component id="panelFiltroAvisos" pref="1079" max="32767" attributes="0"/>
+                          <Component id="panelFiltroAvisos" pref="1071" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1259,7 +1276,7 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnPesquisarFiltroAvisos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="585" max="32767" attributes="0"/>
+                          <EmptySpace pref="577" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
