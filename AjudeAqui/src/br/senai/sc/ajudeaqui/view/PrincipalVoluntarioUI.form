@@ -8,14 +8,14 @@
       <Rectangle value="[0, 0, 0, 0]"/>
     </Property>
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1200, 750]"/>
+      <Dimension value="[1300, 700]"/>
     </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1200, 750]"/>
+      <Dimension value="[1300, 700]"/>
     </Property>
     <Property name="name" type="java.lang.String" value="frameVoluntario" noResource="true"/>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1200, 750]"/>
+      <Dimension value="[1300, 700]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -56,13 +56,13 @@
         </Property>
         <Property name="tabLayoutPolicy" type="int" value="1"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1100, 700]"/>
+          <Dimension value="[1300, 700]"/>
         </Property>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1100, 700]"/>
+          <Dimension value="[1300, 700]"/>
         </Property>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1100, 700]"/>
+          <Dimension value="[1300, 700]"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
@@ -79,14 +79,14 @@
               </Border>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
             <Property name="name" type="java.lang.String" value="" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -105,19 +105,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="btnSalvarDadosPerfil" min="-2" pref="116" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btnSalvarDadosPerfil1" min="-2" pref="116" max="-2" attributes="0"/>
+                              <Component id="btnEditarDadosPerfil" min="-2" pref="116" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="panelFormacaoAcademica" alignment="0" max="32767" attributes="0"/>
-                              <Component id="panelDadosPessoais" alignment="0" max="32767" attributes="0"/>
-                              <Component id="panelExperiencias" alignment="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="panelFormacaoAcademica" alignment="0" max="32767" attributes="0"/>
+                          <Component id="panelExperiencias" alignment="0" max="32767" attributes="0"/>
+                          <Component id="panelDadosPessoais" alignment="0" max="32767" attributes="0"/>
+                          <Component id="panelAlterarSenha" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                      <EmptySpace pref="82" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -127,15 +126,17 @@
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Component id="panelDadosPessoais" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="panelFormacaoAcademica" min="-2" pref="97" max="-2" attributes="0"/>
+                      <Component id="panelFormacaoAcademica" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="panelExperiencias" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
+                      <Component id="panelAlterarSenha" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnSalvarDadosPerfil1" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="btnEditarDadosPerfil" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                           <Component id="btnSalvarDadosPerfil" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="218" max="32767" attributes="0"/>
+                      <EmptySpace pref="57" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -149,7 +150,7 @@
                 <Property name="text" type="java.lang.String" value="Salvar"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="btnSalvarDadosPerfil1">
+            <Component class="javax.swing.JButton" name="btnEditarDadosPerfil">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/img/editar_usuario_16x16.png"/>
@@ -165,14 +166,14 @@
                   </Border>
                 </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 160]"/>
+                  <Dimension value="[1197, 160]"/>
                 </Property>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[0, 0]"/>
+                  <Dimension value="[1197, 160]"/>
                 </Property>
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 160]"/>
+                  <Dimension value="[1197, 160]"/>
                 </Property>
               </Properties>
 
@@ -196,11 +197,13 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jftxtCpf" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
-                                  <Component id="cmbEstadoCivil" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txtNome" max="32767" attributes="0"/>
                                   <Component id="txtEndereco" alignment="0" min="-2" pref="327" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="dateChooserDataNascimento" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="cmbEstadoCivil" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="dateChooserDataNascimento" alignment="0" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -216,9 +219,9 @@
                                   <Component id="ftxtCelular" min="-2" pref="110" max="-2" attributes="0"/>
                                   <Component id="ftxtTelefone" min="-2" pref="110" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="ftxtEmail" min="-2" pref="204" max="-2" attributes="0"/>
                               <Component id="cmbSexo" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
                               <Component id="txtComplemento" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                              <Component id="ftxtEmail" alignment="0" min="-2" pref="247" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -299,9 +302,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblNome">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Dialog" size="12" style="0"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="Nome:"/>
                   </Properties>
@@ -334,9 +334,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCpf">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Dialog" size="12" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="CPF:"/>
                   </Properties>
                 </Component>
@@ -385,9 +382,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEndereco">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Dialog" size="12" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Endere&#xe7;o:"/>
                   </Properties>
                 </Component>
@@ -406,9 +400,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEmail">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Dialog" size="12" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="E-mail:"/>
                   </Properties>
                 </Component>
@@ -419,9 +410,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblDataNascimento">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Dialog" size="12" style="0"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Data Nascimento:"/>
                   </Properties>
                 </Component>
@@ -456,13 +444,13 @@
                   </Border>
                 </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 160]"/>
+                  <Dimension value="[1197, 97]"/>
                 </Property>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[0, 0]"/>
+                  <Dimension value="[1197, 160]"/>
                 </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 160]"/>
+                  <Dimension value="[1197, 97]"/>
                 </Property>
               </Properties>
 
@@ -481,30 +469,33 @@
                           </Group>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblInicioCurso" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblNomeCurso" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblNomeCurso" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                   <Component id="txtNomeCurso" min="-2" pref="194" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                                   <Component id="lblSituacao" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="cmbSituacao" min="-2" pref="110" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnCursosInseridos" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="319" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblInicioCurso" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                   <Component id="datechooseInicioCurso" min="-2" pref="86" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="lblFimCurso" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Component id="datechooserFimCurso" min="-2" pref="86" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnAddCurso" min="-2" pref="22" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -512,35 +503,35 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblNivelCurso" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cmbNivelCurso" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="lblNomeCurso" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtNomeCurso" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="lblSituacao" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cmbSituacao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="btnCursosInseridos" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                          <Component id="lblInstituicaoFormacao" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txtInstituicaoFormacao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="lblInicioCurso" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtNomeCurso" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblNivelCurso" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cmbNivelCurso" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="lblNomeCurso" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSituacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cmbSituacao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="btnCursosInseridos" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="datechooseInicioCurso" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="datechooseInicioCurso" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="txtInstituicaoFormacao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="lblInicioCurso" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblInstituicaoFormacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblFimCurso" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnAddCurso" min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Component id="datechooserFimCurso" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                                      <Component id="lblFimCurso" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="datechooserFimCurso" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="btnAddCurso" min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="17" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -657,10 +648,13 @@
                   </Border>
                 </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 205]"/>
+                  <Dimension value="[1197, 213]"/>
                 </Property>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 205]"/>
+                  <Dimension value="[1197, 213]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 213]"/>
                 </Property>
               </Properties>
 
@@ -671,8 +665,8 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblAreaInteresse" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="txtAreaInteresse" min="-2" pref="171" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="cmbAreasInteresse" min="-2" pref="177" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnAddAreaInteresse" min="-2" pref="22" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -702,9 +696,9 @@
                                           <Component id="txtInstituicao" min="-2" pref="175" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="lblFuncao" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                                          <Component id="txtFuncao" min="-2" pref="103" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                          <Component id="txtFuncao" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblEntrada" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="datechooseEntrada" min="-2" pref="86" max="-2" attributes="0"/>
@@ -718,7 +712,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="117" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -727,29 +721,25 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="txtInstituicao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                                      <Component id="lblInstituicaoExp" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtFuncao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                                      <Component id="lblFuncao" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                      <Component id="lblAtuouComoVoluntario" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="cmbAtuouComoVoluntario" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="txtInstituicao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="lblInstituicaoExp" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtFuncao" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="lblFuncao" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="btnAddExperiencia" min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="lblEntrada" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="datechooseEntrada" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblSaida" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="datechooserSaida" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="lblAtuouComoVoluntario" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cmbAtuouComoVoluntario" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="btnAddExperiencia" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="lblEntrada" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="datechooseEntrada" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSaida" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="datechooserSaida" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -776,21 +766,21 @@
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtAreaInteresse" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="lblAreaInteresse" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblAreaInteresse" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cmbAreasInteresse" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
                               <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                   <Component id="btnCursosInseridos2" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
                                   <Component id="btnAddAreaInteresse" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="18" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JTextField" name="txtAreaInteresse">
-                </Component>
                 <Component class="javax.swing.JLabel" name="lblInstituicaoExp">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -951,6 +941,123 @@
                 </Component>
                 <Component class="datechooser.beans.DateChooserCombo" name="datechooserSaida">
                 </Component>
+                <Component class="javax.swing.JComboBox" name="cmbAreasInteresse">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="1">
+                        <StringItem index="0" value="..."/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelAlterarSenha">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Alterar Senha"/>
+                  </Border>
+                </Property>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 122]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 122]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 122]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblLembreteSenha" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="txtLembreteSenha" min="-2" pref="256" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblNovaSenha" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblSenhaAtual" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="ptxtNovaSenha" pref="117" max="32767" attributes="0"/>
+                                      <Component id="ptxtSenhaAtual" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblSenhaAtual" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ptxtSenhaAtual" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="lblNovaSenha" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="ptxtNovaSenha" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblLembreteSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtLembreteSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="lblSenhaAtual">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Senha Atual:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblNovaSenha">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Nova Senha:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblLembreteSenha">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Lembrete de Senha:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtLembreteSenha">
+                </Component>
+                <Component class="javax.swing.JPasswordField" name="ptxtSenhaAtual">
+                </Component>
+                <Component class="javax.swing.JPasswordField" name="ptxtNovaSenha">
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
@@ -963,13 +1070,13 @@
               </Border>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -986,24 +1093,24 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="scrollpaneVagas" max="32767" attributes="0"/>
-                          <Component id="panelFiltroVagas" pref="1071" max="32767" attributes="0"/>
+                          <Component id="panelFiltroVagas" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="82" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <Component id="panelFiltroVagas" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="panelFiltroVagas" min="-2" pref="110" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="scrollpaneVagas" min="-2" pref="534" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="scrollpaneVagas" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1017,35 +1124,47 @@
                   </Border>
                 </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 115]"/>
+                  <Dimension value="[1197, 150]"/>
                 </Property>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[0, 0]"/>
+                  <Dimension value="[1197, 150]"/>
                 </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1078, 115]"/>
+                  <Dimension value="[1197, 150]"/>
                 </Property>
               </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblTituloFiltroVagas" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblDataPublicacaoFiltroVagas" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblInstituicaoFiltroVagas" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblTituloFiltroVagas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblDataPublicacaoFiltroVagas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblInstituicaoFiltroVagas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="dateChooserDataPublicacaoVagas" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="cmbTipoServicoVagas" alignment="1" min="-2" pref="258" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="cmbInstituicaoFiltroVagas" max="32767" attributes="0"/>
+                                                  <Component id="txtTituloFiltroVagas" alignment="0" min="-2" pref="258" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="btnPesquisarFiltroVagas" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Component id="lblTipoServicoVagas" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="ftxtDataPublicacaoFiltroVagas" min="-2" pref="148" max="-2" attributes="0"/>
-                              <Component id="cmbInstituicaoFiltroVagas" max="32767" attributes="0"/>
-                              <Component id="txtTituloFiltroVagas" alignment="0" min="-2" pref="258" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnPesquisarFiltroVagas" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="577" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1064,11 +1183,16 @@
                               <Component id="lblInstituicaoFiltroVagas" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="ftxtDataPublicacaoFiltroVagas" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="lblDataPublicacaoFiltroVagas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="lblDataPublicacaoFiltroVagas" min="-2" max="-2" attributes="0"/>
+                              <Component id="dateChooserDataPublicacaoVagas" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblTipoServicoVagas" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cmbTipoServicoVagas" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="23" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1107,11 +1231,6 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="ftxtDataPublicacaoFiltroVagas">
-                  <Properties>
-                    <Property name="horizontalAlignment" type="int" value="4"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JButton" name="btnPesquisarFiltroVagas">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -1120,9 +1239,42 @@
                     <Property name="text" type="java.lang.String" value="Pesquisar"/>
                   </Properties>
                 </Component>
+                <Component class="datechooser.beans.DateChooserCombo" name="dateChooserDataPublicacaoVagas">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblTipoServicoVagas">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Tipo de Servi&#xe7;o:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbTipoServicoVagas">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JScrollPane" name="scrollpaneVagas">
+              <Properties>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 480]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 480]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 480]"/>
+                </Property>
+              </Properties>
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
               </AuxValues>
@@ -1139,14 +1291,36 @@
                       </Table>
                     </Property>
                     <Property name="autoscrolls" type="boolean" value="false"/>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[32767, 32767]"/>
+                      <Dimension value="[1197, 480]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[0, 0]"/>
+                      <Dimension value="[1197, 480]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="null"/>
+                      <Dimension value="[1197, 480]"/>
+                    </Property>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -1162,13 +1336,13 @@
               </Border>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[1110, 730]"/>
+              <Dimension value="[1110, 700]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1185,30 +1359,41 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="scrollpaneAvisos" max="32767" attributes="0"/>
-                          <Component id="panelFiltroAvisos" pref="1071" max="32767" attributes="0"/>
+                          <Component id="scrollpaneAvisos" min="-2" max="-2" attributes="0"/>
+                          <Component id="panelFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="82" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Component id="panelFiltroAvisos" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="panelFiltroAvisos" min="-2" pref="110" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="scrollpaneAvisos" min="-2" pref="533" max="-2" attributes="0"/>
-                      <EmptySpace pref="67" max="32767" attributes="0"/>
+                      <Component id="scrollpaneAvisos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="56" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
             <Container class="javax.swing.JScrollPane" name="scrollpaneAvisos">
+              <Properties>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 480]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 480]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1197, 480]"/>
+                </Property>
+              </Properties>
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
               </AuxValues>
@@ -1226,13 +1411,13 @@
                     </Property>
                     <Property name="autoscrolls" type="boolean" value="false"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[1017, 130]"/>
+                      <Dimension value="[1197, 480]"/>
                     </Property>
                     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[939, 130]"/>
+                      <Dimension value="[1197, 480]"/>
                     </Property>
                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[939, 0]"/>
+                      <Dimension value="[1197, 480]"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -1246,37 +1431,45 @@
                   </Border>
                 </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[1017, 130]"/>
+                  <Dimension value="[1197, 150]"/>
                 </Property>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[939, 130]"/>
+                  <Dimension value="[1197, 150]"/>
                 </Property>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[939, 130]"/>
+                  <Dimension value="[1197, 150]"/>
                 </Property>
               </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblTituloFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblInstituicaoFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblDataPublicacaoFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="cmbInstituicaoFiltroAvisos" min="-2" pref="258" max="-2" attributes="0"/>
-                              <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="ftxtDataPublicacaoFiltroAvisos" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
-                                  <Component id="txtTituloFiltroAvisos" min="-2" pref="258" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblTituloFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblInstituicaoFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblDataPublicacaoFiltroAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="cmbInstituicaoFiltroAvisos" min="-2" pref="258" max="-2" attributes="0"/>
+                                              <Component id="txtTituloFiltroAvisos" alignment="1" min="-2" pref="258" max="-2" attributes="0"/>
+                                              <Component id="cmbTipOServicoAvisos" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="btnPesquisarFiltroAvisos" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="dateChooserDataPublicacaoAvisos" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
+                              <Component id="lblTipoServicoAvisos" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnPesquisarFiltroAvisos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="577" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="664" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1295,11 +1488,16 @@
                               <Component id="cmbInstituicaoFiltroAvisos" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="ftxtDataPublicacaoFiltroAvisos" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="lblDataPublicacaoFiltroAvisos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="lblDataPublicacaoFiltroAvisos" min="-2" max="-2" attributes="0"/>
+                              <Component id="dateChooserDataPublicacaoAvisos" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblTipoServicoAvisos" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cmbTipOServicoAvisos" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="23" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1338,17 +1536,34 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="ftxtDataPublicacaoFiltroAvisos">
-                  <Properties>
-                    <Property name="horizontalAlignment" type="int" value="4"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JButton" name="btnPesquisarFiltroAvisos">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/img/lupa_16x16.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Pesquisar"/>
+                  </Properties>
+                </Component>
+                <Component class="datechooser.beans.DateChooserCombo" name="dateChooserDataPublicacaoAvisos">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblTipoServicoAvisos">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Tipo de Servi&#xe7;o:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbTipOServicoAvisos">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
                   </Properties>
                 </Component>
               </SubComponents>

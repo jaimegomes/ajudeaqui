@@ -116,8 +116,8 @@ public class RegistroUI extends javax.swing.JInternalFrame {
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar_16x16.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
 
-        btnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/salvar_16x16.png"))); // NOI18N
-        btnSalvar.setText("Salvar");
+        btnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/next_16x16.png"))); // NOI18N
+        btnSalvar.setText("Avançar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
