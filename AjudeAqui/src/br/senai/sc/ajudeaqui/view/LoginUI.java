@@ -27,6 +27,7 @@ public class LoginUI extends javax.swing.JFrame {
         lblBemVindo = new javax.swing.JLabel();
         lblErroLogin = new javax.swing.JLabel();
         btnRegistrarse = new javax.swing.JButton();
+        btnLembrarSenha = new javax.swing.JButton();
         lblBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -43,22 +44,22 @@ public class LoginUI extends javax.swing.JFrame {
         lblLogin.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblLogin.setText("Login:");
         getContentPane().add(lblLogin);
-        lblLogin.setBounds(260, 430, 110, 29);
+        lblLogin.setBounds(260, 410, 110, 32);
 
         txtLogin.setFont(new java.awt.Font("Dialog", 2, 18)); // NOI18N
         txtLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(txtLogin);
-        txtLogin.setBounds(360, 430, 150, 30);
+        txtLogin.setBounds(360, 410, 150, 30);
 
         lblSenha.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblSenha.setText("Senha:");
         getContentPane().add(lblSenha);
-        lblSenha.setBounds(260, 480, 110, 29);
+        lblSenha.setBounds(260, 460, 110, 32);
 
         pwdSenha.setFont(new java.awt.Font("Dialog", 2, 14)); // NOI18N
         pwdSenha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         getContentPane().add(pwdSenha);
-        pwdSenha.setBounds(360, 480, 150, 30);
+        pwdSenha.setBounds(360, 460, 150, 30);
 
         btnEntrar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ok_16x16.png"))); // NOI18N
@@ -70,7 +71,7 @@ public class LoginUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnEntrar);
-        btnEntrar.setBounds(520, 480, 120, 30);
+        btnEntrar.setBounds(520, 460, 120, 30);
 
         lblBemVindo.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         lblBemVindo.setText("Seja Bem Vindo ao Portal do Voluntário :: Ajude Aqui :: ");
@@ -82,9 +83,14 @@ public class LoginUI extends javax.swing.JFrame {
         getContentPane().add(lblErroLogin);
         lblErroLogin.setBounds(140, 558, 550, 0);
 
+        btnRegistrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/editar_usuario_16x16.png"))); // NOI18N
         btnRegistrarse.setText("Registrar-se");
         getContentPane().add(btnRegistrarse);
-        btnRegistrarse.setBounds(360, 530, 150, 25);
+        btnRegistrarse.setBounds(360, 510, 150, 25);
+
+        btnLembrarSenha.setText("Esqueci a Senha");
+        getContentPane().add(btnLembrarSenha);
+        btnLembrarSenha.setBounds(360, 540, 150, 23);
 
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background.png"))); // NOI18N
         getContentPane().add(lblBackground);
@@ -110,6 +116,7 @@ public class LoginUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEntrar;
+    private javax.swing.JButton btnLembrarSenha;
     private javax.swing.JButton btnRegistrarse;
     private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblBemVindo;
