@@ -392,7 +392,7 @@
                           <Component id="scrollpaneVoluntarios" max="32767" attributes="0"/>
                           <Component id="panelFiltroVoluntarios" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="82" max="32767" attributes="0"/>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -443,9 +443,18 @@
                               <Component id="txtEmailFiltroVoluntarios" alignment="1" max="32767" attributes="0"/>
                               <Component id="jComboBox2" pref="258" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="btnPesquisarFiltroVoluntarios" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="btnPesquisarFiltroVoluntarios" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="btnFiltroVoluntarios" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -467,7 +476,10 @@
                           </Group>
                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jComboBox2" alignment="1" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="jComboBox2" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Component id="btnFiltroVoluntarios" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              </Group>
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
@@ -522,6 +534,14 @@
                         <StringItem index="3" value="Item 4"/>
                       </StringArray>
                     </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnFiltroVoluntarios">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/agenda_16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Gerar Relat&#xf3;rio"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -926,7 +946,7 @@
                           <Component id="panelCadAnuncio" max="32767" attributes="0"/>
                           <Component id="panelAnunciosPublicados" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="82" max="32767" attributes="0"/>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -971,11 +991,13 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnPesquisarAnunciosPublicados" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnFiltroVoluntarios1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnEditarAnuncio" min="-2" pref="116" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnExcluirAnuncio" min="-2" pref="116" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="scrollpaneAnunciosPublicados" alignment="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="scrollpaneAnunciosPublicados" alignment="0" pref="1185" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -983,14 +1005,17 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="btnEditarAnuncio" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Component id="btnExcluirAnuncio" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="lblFiltroTituloAnunciosPublicados" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtFiltroTituloAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
-                                  <Component id="btnPesquisarAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="btnFiltroVoluntarios1" min="-2" pref="19" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="btnEditarAnuncio" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                      <Component id="btnExcluirAnuncio" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                      <Component id="lblFiltroTituloAnunciosPublicados" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtFiltroTituloAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                      <Component id="btnPesquisarAnunciosPublicados" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -1073,6 +1098,14 @@
                       <Image iconType="3" name="/img/cancelar_16x16.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Excluir"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnFiltroVoluntarios1">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/agenda_16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Gerar Relat&#xf3;rio"/>
                   </Properties>
                 </Component>
               </SubComponents>

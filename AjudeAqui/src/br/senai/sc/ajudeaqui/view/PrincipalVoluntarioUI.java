@@ -110,6 +110,7 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
         dateChooserDataPublicacaoVagas = new datechooser.beans.DateChooserCombo();
         lblTipoServicoVagas = new javax.swing.JLabel();
         cmbTipoServicoVagas = new javax.swing.JComboBox();
+        btnPesquisarFiltroVagas1 = new javax.swing.JButton();
         scrollpaneVagas = new javax.swing.JScrollPane();
         tableVagas = new javax.swing.JTable();
         panelAvisos = new javax.swing.JPanel();
@@ -686,6 +687,9 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
 
         cmbTipoServicoVagas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        btnPesquisarFiltroVagas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/agenda_16x16.png"))); // NOI18N
+        btnPesquisarFiltroVagas1.setText("Gerar Relatório");
+
         javax.swing.GroupLayout panelFiltroVagasLayout = new javax.swing.GroupLayout(panelFiltroVagas);
         panelFiltroVagas.setLayout(panelFiltroVagasLayout);
         panelFiltroVagasLayout.setHorizontalGroup(
@@ -708,9 +712,12 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
                                         .addComponent(cmbInstituicaoFiltroVagas, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(txtTituloFiltroVagas, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
-                                .addComponent(btnPesquisarFiltroVagas))))
+                                .addComponent(btnPesquisarFiltroVagas)))
+                        .addGap(32, 32, 32))
                     .addComponent(lblTipoServicoVagas))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnPesquisarFiltroVagas1)
+                .addContainerGap())
         );
         panelFiltroVagasLayout.setVerticalGroup(
             panelFiltroVagasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -733,6 +740,10 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
                     .addComponent(cmbTipoServicoVagas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTipoServicoVagas))
                 .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFiltroVagasLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnPesquisarFiltroVagas1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         scrollpaneVagas.setMaximumSize(new java.awt.Dimension(1197, 480));
@@ -1007,6 +1018,7 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
     private javax.swing.JButton btnFoto;
     private javax.swing.JButton btnPesquisarFiltroAvisos;
     private javax.swing.JButton btnPesquisarFiltroVagas;
+    private javax.swing.JButton btnPesquisarFiltroVagas1;
     private javax.swing.JButton btnSalvarDadosPerfil;
     private javax.swing.JComboBox cmbAreasInteresse;
     private javax.swing.JComboBox cmbAtuouComoVoluntario;

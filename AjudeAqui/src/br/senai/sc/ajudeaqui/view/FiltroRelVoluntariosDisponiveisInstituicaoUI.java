@@ -9,12 +9,12 @@ package br.senai.sc.ajudeaqui.view;
  *
  * @author Administrador
  */
-public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
+public class FiltroRelVoluntariosDisponiveisInstituicaoUI extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FiltroRelatorioVoluntariosUI
      */
-    public FiltroRelatorioVoluntariosUI() {
+    public FiltroRelVoluntariosDisponiveisInstituicaoUI() {
         initComponents();
     }
 
@@ -63,12 +63,9 @@ public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(3, 3, 3)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblEndereco)
-                            .addComponent(lblEmail)
-                            .addComponent(lblNome))
-                        .addGap(13, 13, 13))
+                    .addComponent(lblEndereco)
+                    .addComponent(lblEmail)
+                    .addComponent(lblNome)
                     .addComponent(lblTipoServico))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
