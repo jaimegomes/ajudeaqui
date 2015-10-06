@@ -27,7 +27,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanel1" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="47" max="32767" attributes="0"/>
                       <Component id="btnGerarRelatorio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnCancelar" min="-2" pref="125" max="-2" attributes="0"/>
@@ -57,7 +57,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Filtro Relat&#xf3;rio"/>
+            <TitledBorder title="Filtro Relat&#xf3;rio Volunt&#xe1;rios Dispon&#xed;veis"/>
           </Border>
         </Property>
       </Properties>
@@ -66,21 +66,28 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblEndereco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblNome" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="lblTipoServico" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblEndereco" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblNome" alignment="0" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="txtNome" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="chkTodos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="113" max="32767" attributes="0"/>
-                      </Group>
                       <Component id="txtEmail" max="32767" attributes="0"/>
                       <Component id="txtEndereco" alignment="1" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="chkTodos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="cmbTipoServico" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -104,9 +111,14 @@
                       <Component id="lblEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblTipoServico" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cmbTipoServico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="13" max="32767" attributes="0"/>
                   <Component id="chkTodos" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -136,6 +148,23 @@
         <Component class="javax.swing.JCheckBox" name="chkTodos">
           <Properties>
             <Property name="text" type="java.lang.String" value="Todos Volunt&#xe1;rios"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblTipoServico">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tipo Servi&#xe7;o:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cmbTipoServico">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>

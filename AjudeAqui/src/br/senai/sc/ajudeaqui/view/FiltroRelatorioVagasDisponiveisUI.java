@@ -48,7 +48,7 @@ public class FiltroRelatorioVagasDisponiveisUI extends javax.swing.JInternalFram
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar_16x16.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
 
-        panelFiltroRelatorio.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro Relatório"));
+        panelFiltroRelatorio.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro Relatório Anúncios Publicados"));
 
         lblDataInicio.setText("Data Inicio:");
 
@@ -59,16 +59,17 @@ public class FiltroRelatorioVagasDisponiveisUI extends javax.swing.JInternalFram
         panelFiltroRelatorioLayout.setHorizontalGroup(
             panelFiltroRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelFiltroRelatorioLayout.createSequentialGroup()
-                .addGroup(panelFiltroRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addContainerGap()
+                .addGroup(panelFiltroRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(panelFiltroRelatorioLayout.createSequentialGroup()
                         .addComponent(lblDataFinal)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(dateChooserDataFim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelFiltroRelatorioLayout.createSequentialGroup()
                         .addComponent(lblDataInicio)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(dateChooserDataInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         panelFiltroRelatorioLayout.setVerticalGroup(
             panelFiltroRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,12 +91,12 @@ public class FiltroRelatorioVagasDisponiveisUI extends javax.swing.JInternalFram
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelFiltroRelatorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelFiltroRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnGerarRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

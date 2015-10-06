@@ -35,12 +35,14 @@ public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
         lblEndereco = new javax.swing.JLabel();
         txtEndereco = new javax.swing.JTextField();
         chkTodos = new javax.swing.JCheckBox();
+        lblTipoServico = new javax.swing.JLabel();
+        cmbTipoServico = new javax.swing.JComboBox();
         btnGerarRelatorio = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
 
         setTitle(":: Portal do Voluntário Ajude Aqui ::");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro Relatório"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro Relatório Voluntários Disponíveis"));
 
         lblNome.setText("Nome:");
 
@@ -50,24 +52,33 @@ public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
 
         chkTodos.setText("Todos Voluntários");
 
+        lblTipoServico.setText("Tipo Serviço:");
+
+        cmbTipoServico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(3, 3, 3)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblEndereco)
-                    .addComponent(lblEmail)
-                    .addComponent(lblNome))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblEndereco)
+                            .addComponent(lblEmail)
+                            .addComponent(lblNome))
+                        .addGap(13, 13, 13))
+                    .addComponent(lblTipoServico))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtNome)
+                    .addComponent(txtEmail)
+                    .addComponent(txtEndereco, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(chkTodos)
-                        .addGap(0, 113, Short.MAX_VALUE))
-                    .addComponent(txtEmail)
-                    .addComponent(txtEndereco, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(cmbTipoServico, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -85,9 +96,13 @@ public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEndereco)
                     .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTipoServico)
+                    .addComponent(cmbTipoServico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addComponent(chkTodos)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         btnGerarRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/agenda_16x16.png"))); // NOI18N
@@ -105,7 +120,7 @@ public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 47, Short.MAX_VALUE)
                         .addComponent(btnGerarRelatorio)
                         .addGap(18, 18, 18)
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -131,10 +146,12 @@ public class FiltroRelatorioVoluntariosUI extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnGerarRelatorio;
     private javax.swing.JCheckBox chkTodos;
+    private javax.swing.JComboBox cmbTipoServico;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblEndereco;
     private javax.swing.JLabel lblNome;
+    private javax.swing.JLabel lblTipoServico;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtEndereco;
     private javax.swing.JTextField txtNome;
