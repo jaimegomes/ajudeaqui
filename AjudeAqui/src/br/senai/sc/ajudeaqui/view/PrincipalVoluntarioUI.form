@@ -1155,7 +1155,6 @@
                                           <Component id="btnPesquisarFiltroVagas" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblTipoServicoVagas" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
