@@ -35,7 +35,7 @@ public class FiltroRelVagasDisponiveisVoluntarioUI extends javax.swing.JInternal
         dateChooserDataInicio = new datechooser.beans.DateChooserCombo();
         dateChooserDataFim = new datechooser.beans.DateChooserCombo();
 
-        setTitle(":: Portal do Voluntário Ajude Aqui ::");
+        setTitle(":: Sistema doVoluntário Ajude Aqui ::");
         try {
             setSelected(true);
         } catch (java.beans.PropertyVetoException e1) {

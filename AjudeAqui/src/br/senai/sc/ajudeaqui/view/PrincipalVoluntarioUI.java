@@ -128,7 +128,7 @@ public class PrincipalVoluntarioUI extends javax.swing.JFrame {
         cmbTipOServicoAvisos = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle(":: Portal do Voluntário Ajude Aqui ::");
+        setTitle(":: Sistema doVoluntário Ajude Aqui ::");
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setMaximumSize(new java.awt.Dimension(1300, 700));
         setMinimumSize(new java.awt.Dimension(1300, 700));

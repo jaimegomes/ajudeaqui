@@ -104,7 +104,7 @@ public class PrincipalInstituicaoUI extends javax.swing.JFrame {
         cmbTipoServicoAnuncio = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle(":: Portal do Voluntário Ajude Aqui ::");
+        setTitle(":: Sistema doVoluntário Ajude Aqui ::");
         setMaximumSize(new java.awt.Dimension(1300, 700));
         setMinimumSize(new java.awt.Dimension(1300, 700));
         setName("frameInstituicao"); // NOI18N

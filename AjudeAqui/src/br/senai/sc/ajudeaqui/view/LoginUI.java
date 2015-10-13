@@ -31,7 +31,7 @@ public class LoginUI extends javax.swing.JFrame {
         lblBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle(":: Portal do Voluntário Ajude Aqui ::");
+        setTitle(":: Sistema doVoluntário Ajude Aqui ::");
         setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         setForeground(new java.awt.Color(0, 0, 0));
         setMaximumSize(new java.awt.Dimension(800, 600));

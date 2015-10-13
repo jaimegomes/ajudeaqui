@@ -37,6 +37,8 @@ public class FiltroRelAnuncioInstituicaoUI extends javax.swing.JInternalFrame {
         btnGerarRelatorio = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
 
+        setTitle(":: Sistema doVoluntário Ajude Aqui ::");
+
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro Relatório de Anúncios"));
 
         lblDataPublicacao.setText("Data Publicação:");

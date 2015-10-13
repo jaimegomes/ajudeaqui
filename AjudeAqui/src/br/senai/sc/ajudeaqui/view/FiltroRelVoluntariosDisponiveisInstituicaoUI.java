@@ -40,7 +40,7 @@ public class FiltroRelVoluntariosDisponiveisInstituicaoUI extends javax.swing.JI
         btnGerarRelatorio = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
 
-        setTitle(":: Portal do Voluntário Ajude Aqui ::");
+        setTitle(":: Sistema doVoluntário Ajude Aqui ::");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Filtro Relatório Voluntários Disponíveis"));
 
